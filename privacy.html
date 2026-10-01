@@ -24,51 +24,54 @@
 <!-- Chinese -->
 <div class="zh">
 <h1>私隱政策 — 今晚食咩</h1>
-<p class="updated">最後更新：2026 年 7 月 6 日</p>
+<p class="updated">最後更新：2026 年 10 月 1 日</p>
 
 <p>「今晚食咩」（下稱「本 App」）由 Kwan Chi Cheng（下稱「我哋」）開發及營運。我哋重視你嘅私隱，本政策解釋我哋點樣收集、使用同保護你嘅資料。</p>
 
 <h2>1. 我哋收集嘅資料</h2>
 <ul>
   <li><strong>帳戶資料</strong>：透過 Apple 或 Google 登入時，我哋會收到你嘅電郵地址同用戶 ID。</li>
-  <li><strong>雪櫃數據</strong>：你新增嘅食材名稱、數量、到期日等資料，儲存於我哋嘅伺服器（Supabase），用於同步功能。</li>
-  <li><strong>相機影像</strong>：當你使用 AI 掃描功能時，影像會傳送到我哋嘅 AI 伺服器進行食材辨識，<strong>處理完成後即時刪除，唔會永久儲存</strong>。</li>
-  <li><strong>食譜數據</strong>：你儲存嘅食譜同菜單資料。</li>
-  <li><strong>訂閱資料</strong>：訂閱狀態由 RevenueCat（第三方服務）管理，我哋只收到訂閱有效與否嘅資訊。</li>
+  <li><strong>家庭資料</strong>：家庭成員身份、角色、邀請、權限、餐單及修改紀錄，透過 Supabase 儲存及同步。</li>
+  <li><strong>飲食及使用資料</strong>：主動填寫的口味、敏感／禁忌、收藏、晚餐紀錄及設定。家庭共享餐單及相關飲食需要可由獲授權的成員與照顧者查看。未登入的本機資料主要儲存在裝置內。</li>
+  <li><strong>通知資料</strong>：推送 token、通知偏好及投遞狀態，用於傳送家庭餐單系統通知。</li>
+  <li><strong>訂閱及 AI 用量</strong>：RevenueCat 與商店處理訂閱；我哋處理產品、交易／收據驗證資料、有效期、權益及 AI 使用量，唔會處理完整付款卡資料。</li>
 </ul>
 
 <h2>2. 我哋點樣使用你嘅資料</h2>
 <ul>
-  <li>提供雪櫃管理、食譜推薦同家庭共享功能</li>
-  <li>AI 食材辨識同食譜生成</li>
+  <li>提供晚餐選擇、食譜同家庭共享餐單</li>
+  <li>AI 每週餐單規劃，包括已啟用的自動安排</li>
   <li>管理你嘅訂閱同服務配額</li>
   <li>改善 App 功能同用戶體驗</li>
 </ul>
 
 <h2>3. 廣告</h2>
-<p>免費版會顯示 Google AdMob 廣告。AdMob 可能會收集裝置識別碼用於個人化廣告。你可以喺裝置設定中選擇退出個人化廣告。Premium 及 Pro 訂閱用戶唔會見到廣告。</p>
+<p>免費方案的 Google AdMob 廣告請求設定為非個人化；Family Plus 及 Family Large 不顯示應用程式內廣告。我哋不要求 App Tracking Transparency 權限，亦不會把家庭飲食資料傳送給廣告服務作個人化廣告。非個人化不等於沒有資料收集：Google 仍可能處理 IP 地址、裝置或應用程式識別資料、廣告互動及診斷資料，以投放廣告、量度及防止欺詐。詳見 <a href="https://policies.google.com/privacy">Google 私隱政策</a>。</p>
 
 <h2>4. 資料分享</h2>
 <p>我哋<strong>唔會出售你嘅個人資料</strong>。我哋只會同以下第三方服務分享必要資料：</p>
 <ul>
   <li><strong>Supabase</strong>：雲端資料儲存同用戶認證</li>
-  <li><strong>Alibaba Cloud (DashScope)</strong>：AI 影像辨識同食譜生成（只傳送影像同文字提示，唔包含個人資料）</li>
+  <li><strong>Alibaba Cloud (DashScope / Qwen)</strong>：AI 規劃請求包含餐單日期、家庭飲食限制及偏好、近期食譜識別碼、候選食譜內容及評分。不加入帳戶電郵、姓名、成員姓名或照片；飲食資料仍可能涉及個人需要。我哋記錄請求狀態、用量及處理成本以管理配額。現有版本不提供食物相片掃描。</li>
   <li><strong>RevenueCat</strong>：訂閱管理</li>
   <li><strong>Google AdMob</strong>：廣告投放（免費版）</li>
+  <li><strong>Expo、Apple APNs / Google FCM</strong>：系統推送通知</li>
 </ul>
+<p>資料可能由香港以外的服務供應商處理。AI 建議不代表食物安全或醫療保證。</p>
 
 <h2>5. 資料安全</h2>
 <p>所有數據傳輸使用 HTTPS 加密。我哋採用行業標準嘅安全措施保護你嘅資料。</p>
 
 <h2>6. 你嘅權利</h2>
 <ul>
-  <li>你可以隨時喺 App 內刪除你嘅雪櫃數據同食譜</li>
-  <li>登入後可喺 App → 設定 → 帳戶 →「刪除帳戶」永久刪除帳戶同相關雲端資料</li>
+  <li>可在「家庭設定」管理可編輯的飲食資料及手機通知</li>
+  <li>登入後可喺 App → 家庭設定 → 帳戶 →「刪除帳戶」刪除 App 帳戶及相關個人資料，唔會刪除你的 Google／Apple 帳戶。其他成員仍在使用的家庭共享餐單會保留給該家庭。</li>
   <li>有效訂閱仍需另外喺 App Store 或 Google Play 管理或取消</li>
 </ul>
+<p>帳戶資料在提供服務期間保留；為交易、安全及適用法律而需要保留的紀錄會與一般個人資料分開處理。可電郵聯絡我哋查詢或要求刪除資料。</p>
 
 <h2>7. 兒童私隱</h2>
-<p>本 App 唔針對 13 歲以下兒童。我哋唔會有意收集兒童嘅個人資料。</p>
+<p>本 App 供成人管理家庭晚餐，不供兒童自行建立帳戶。成人只應提供安排晚餐所需的資料。</p>
 
 <h2>8. 聯絡我哋</h2>
 <p>如有任何私隱問題，請聯絡：<a href="mailto:simsoncheng0502@gmail.com">simsoncheng0502@gmail.com</a></p>
@@ -77,51 +80,54 @@
 <!-- English -->
 <div class="en">
 <h1>Privacy Policy — Dinner?</h1>
-<p class="updated">Last updated: July 6, 2026</p>
+<p class="updated">Last updated: October 1, 2026</p>
 
 <p>"Dinner?" (the "App") is developed and operated by Kwan Chi Cheng ("we", "us"). We value your privacy. This policy explains how we collect, use, and protect your information.</p>
 
 <h2>1. Information We Collect</h2>
 <ul>
   <li><strong>Account Information</strong>: When you sign in with Apple or Google, we receive your email address and user ID.</li>
-  <li><strong>Fridge Data</strong>: Ingredient names, quantities, and expiry dates you add are stored on our servers (Supabase) for syncing.</li>
-  <li><strong>Camera Images</strong>: When you use AI scanning, images are sent to our AI server for food recognition. <strong>Images are deleted immediately after processing and are not permanently stored.</strong></li>
-  <li><strong>Recipe Data</strong>: Recipes and meal plans you save.</li>
-  <li><strong>Subscription Data</strong>: Subscription status is managed by RevenueCat; we only receive whether your subscription is active.</li>
+  <li><strong>Household Data</strong>: Membership, roles, invitations, permissions, menus and edits stored and synchronized through Supabase.</li>
+  <li><strong>Dietary and Usage Data</strong>: Preferences, allergies/restrictions, favorites, dinner history and settings you provide. Authorized household members and caregivers can view shared menus and relevant dietary needs. Signed-out local data is primarily stored on your device.</li>
+  <li><strong>Notifications</strong>: Push tokens, preferences and delivery status for household menu system notifications.</li>
+  <li><strong>Subscriptions and AI Usage</strong>: RevenueCat and stores process subscriptions. We process products, transaction/receipt verification data, billing periods, entitlements and AI usage, not full payment-card details.</li>
 </ul>
 
 <h2>2. How We Use Your Information</h2>
 <ul>
-  <li>Provide fridge management, recipe suggestions, and family sharing features</li>
-  <li>AI food recognition and recipe generation</li>
+  <li>Provide dinner choices, recipes and shared household menus</li>
+  <li>AI weekly menu planning, including enabled automatic schedules</li>
   <li>Manage your subscription and service quotas</li>
   <li>Improve app functionality and user experience</li>
 </ul>
 
 <h2>3. Advertising</h2>
-<p>The free version displays Google AdMob ads. AdMob may collect device identifiers for personalized advertising. You can opt out of personalized ads in your device settings. Premium and Pro subscribers see no ads.</p>
+<p>Free-plan Google AdMob requests are configured as non-personalized. Family Plus and Family Large do not display in-app ads. We do not request App Tracking Transparency permission or send household dietary information to advertising services for personalized ads. Non-personalized does not mean no collection: Google may process IP addresses, device/app identifiers, ad interactions and diagnostics for delivery, measurement and fraud prevention. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>4. Data Sharing</h2>
 <p>We <strong>do not sell your personal data</strong>. We share necessary data only with these third-party services:</p>
 <ul>
   <li><strong>Supabase</strong>: Cloud data storage and user authentication</li>
-  <li><strong>Alibaba Cloud (DashScope)</strong>: AI image recognition and recipe generation (only images and text prompts, no personal data)</li>
+  <li><strong>Alibaba Cloud (DashScope / Qwen)</strong>: AI planning requests include menu dates, household dietary restrictions/preferences, recent recipe identifiers and candidate recipe content/scores. Requests do not include account emails, names, member names or photos; dietary information may still relate to personal needs. We record request status, usage and processing costs to administer allowances. The current version does not offer food-photo scanning.</li>
   <li><strong>RevenueCat</strong>: Subscription management</li>
   <li><strong>Google AdMob</strong>: Ad delivery (free version only)</li>
+  <li><strong>Expo, Apple APNs / Google FCM</strong>: System push notifications</li>
 </ul>
+<p>Providers may process information outside Hong Kong. AI suggestions are not a food-safety or medical guarantee.</p>
 
 <h2>5. Data Security</h2>
 <p>All data transmissions use HTTPS encryption. We employ industry-standard security measures to protect your information.</p>
 
 <h2>6. Your Rights</h2>
 <ul>
-  <li>You can delete your fridge data and recipes at any time within the app</li>
-  <li>After signing in, you can permanently delete your account and associated cloud data in App → Settings → Account → Delete account</li>
+  <li>Manage editable dietary information and phone notifications in Family Settings.</li>
+  <li>After signing in, use App → Family Settings → Account → Delete account to delete your app account and related personal data. This does not delete your Google/Apple account. Shared menus needed by remaining household members remain available to that household.</li>
   <li>Active subscriptions must be managed or cancelled separately in the App Store or Google Play</li>
 </ul>
+<p>Account data is retained while providing the service. Records needed for transactions, security or applicable law are handled separately from ordinary personal data. Contact us to enquire about or request data deletion.</p>
 
 <h2>7. Children's Privacy</h2>
-<p>This App is not directed at children under 13. We do not knowingly collect personal data from children.</p>
+<p>The app is intended for adults managing household dinners, not for children to create accounts. Adults should provide only information needed to plan meals.</p>
 
 <h2>8. Contact Us</h2>
 <p>For any privacy concerns, contact: <a href="mailto:simsoncheng0502@gmail.com">simsoncheng0502@gmail.com</a></p>
